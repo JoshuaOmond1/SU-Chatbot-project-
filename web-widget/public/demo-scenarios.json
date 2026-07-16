@@ -1,0 +1,186 @@
+{
+  "version": 1,
+  "notice": "Demonstration guidance only. Verify all details against current approved Strathmore University sources.",
+  "scenarios": [
+    {
+      "id": "fee-deadlines",
+      "title": "Demo Fee Deadline Guide",
+      "keywords": ["fee deadline", "fees deadline", "when are fees due", "fee payment date", "pay fees"],
+      "response": "Fee deadlines depend on the programme, intake, and semester. In the live assistant, I would retrieve the current approved fee schedule and show the relevant date with a source link. For now, check your latest fee statement and the Finance Office notice for your intake.",
+      "requirements": "Have your student number, programme, intake, and current fee statement available so the correct deadline can be confirmed.",
+      "nextSteps": "Open your current fee statement, confirm the semester shown, then compare it with the latest Finance Office communication. Contact Finance if the two records differ.",
+      "contact": "The Finance Office should confirm official deadlines and any account-specific payment arrangement. The live assistant will link to the approved Finance contact directory."
+    },
+    {
+      "id": "payment-methods",
+      "title": "Demo Approved Payment Channels",
+      "keywords": ["payment method", "payment channel", "how to pay", "pay by mpesa", "pay by bank", "bank details"],
+      "response": "Use only payment channels published in an official Strathmore Finance notice or shown in the authenticated student portal. The live assistant will list approved channels without exposing or inventing banking information.",
+      "requirements": "You normally need your student number as the payment reference and proof of payment. Confirm the exact reference format before submitting payment.",
+      "nextSteps": "Choose an approved channel, enter the required student reference carefully, retain the receipt, and verify that the payment appears on your statement.",
+      "contact": "Contact the Finance Office if a payment does not reflect or if you need to verify a payment channel before using it."
+    },
+    {
+      "id": "financial-clearance",
+      "title": "Demo Financial Clearance Guide",
+      "keywords": ["financial clearance", "not financially cleared", "clearance status", "fee clearance", "blocked by finance"],
+      "response": "Financial clearance is based on the university's current rules and your account status. Once AMS is connected, the assistant can explain the permitted status returned for your account; it will not calculate or guess your balance.",
+      "requirements": "Keep your student number, latest fee statement, and any recent payment receipt ready for review.",
+      "nextSteps": "Check whether recent payments have reflected, review any account notice, and ask Finance to reconcile the account if the clearance status appears incorrect.",
+      "contact": "The Finance Office handles account reconciliation and financial-clearance decisions. Registration support can assist after Finance confirms the status."
+    },
+    {
+      "id": "semester-registration",
+      "title": "Demo Semester Registration Guide",
+      "keywords": ["semester registration", "register for semester", "how do i register", "unit registration", "course registration"],
+      "response": "A typical registration journey is to confirm eligibility, review the units presented in AMS, submit registration, and verify the confirmation. The live assistant will retrieve the current Registrar instructions for your programme.",
+      "requirements": "You may need an active student account, the required clearance status, and any programme-specific approvals shown in the current registration guidance.",
+      "nextSteps": "Sign in to AMS, review the semester and listed units, resolve any displayed hold, submit registration, and save the confirmation.",
+      "contact": "Contact your faculty or programme office for unit-selection questions. Contact Registrar support for a registration-system issue."
+    },
+    {
+      "id": "add-drop-units",
+      "title": "Demo Add or Drop Units Guide",
+      "keywords": ["add a unit", "drop a unit", "change units", "add drop", "withdraw from unit"],
+      "response": "Adding or dropping a unit must follow the current academic calendar, programme rules, and approval process. The assistant will never claim that a change is complete until the authorised university system confirms it.",
+      "requirements": "Prepare the unit code, unit title, reason for the change, and any approval requested by your programme office.",
+      "nextSteps": "Check the current add/drop window, discuss the academic effect with your programme office, submit the authorised request, and verify the updated AMS record.",
+      "contact": "Your faculty or programme administrator is the first contact. Registrar support handles approved record changes and system issues."
+    },
+    {
+      "id": "prerequisites",
+      "title": "Demo Course Prerequisite Guide",
+      "keywords": ["prerequisite", "course requirement", "unit requirement", "eligible for unit", "can i take"],
+      "response": "Prerequisites vary by curriculum version and programme. The live assistant will use the approved curriculum document and will direct borderline progression decisions to an academic adviser.",
+      "requirements": "Provide the unit code, your programme, curriculum year, and the relevant completed units when asking for guidance.",
+      "nextSteps": "Check the approved curriculum structure, compare the listed prerequisite with your academic record, and confirm any exception with your programme office before registration.",
+      "contact": "Your programme leader or faculty academic adviser should confirm prerequisite interpretation and any permitted exception."
+    },
+    {
+      "id": "academic-advising",
+      "title": "Demo Academic Advising Directory",
+      "keywords": ["academic advising", "academic advisor", "academic adviser", "programme planning", "study plan"],
+      "response": "Academic advising can help with programme planning, prerequisites, progression, workload, and referrals. The live assistant will identify the correct faculty contact from an approved directory.",
+      "requirements": "Bring your student number, programme, current semester, and a clear summary of the decision or difficulty you want to discuss.",
+      "nextSteps": "Write down your questions, review your programme structure, then request an appointment through the faculty's approved contact channel.",
+      "contact": "Start with your faculty or programme academic office. Student Services can help route you if you are unsure which office owns the issue."
+    },
+    {
+      "id": "exam-timetable",
+      "title": "Demo Examination Timetable Guide",
+      "keywords": ["exam timetable", "examination timetable", "exam date", "exam venue", "when is my exam"],
+      "response": "Exam dates and venues must come from the latest approved examination timetable. The assistant will cite that source and warn when a timetable is provisional or superseded.",
+      "requirements": "Use the exact unit code, programme, class or intake, and examination period to identify the correct entry.",
+      "nextSteps": "Open the latest timetable, search by unit code, confirm the date, time, venue, and version date, then check again for official revisions.",
+      "contact": "Contact the Examinations Office or your faculty administrator if a unit is missing or if two official entries conflict."
+    },
+    {
+      "id": "missed-exam",
+      "title": "Demo Missed Examination Guidance",
+      "keywords": ["missed exam", "miss an exam", "absent from exam", "could not sit exam", "exam absence"],
+      "response": "A missed examination is handled under the current examination policy. Report the issue promptly through the approved channel; the assistant cannot approve an excuse or promise a replacement examination.",
+      "requirements": "Prepare the unit code, examination date, a brief factual explanation, and any supporting evidence required by the current policy.",
+      "nextSteps": "Notify the designated office promptly, submit the required form and evidence within the published window, and retain the acknowledgement.",
+      "contact": "The Examinations Office and your faculty should confirm the correct process. Student support may assist where wellbeing or accessibility is involved."
+    },
+    {
+      "id": "supplementary-exam",
+      "title": "Demo Supplementary Examination Guide",
+      "keywords": ["supplementary exam", "supp exam", "resit exam", "retake exam", "special exam"],
+      "response": "Supplementary or special examination eligibility is determined by approved academic regulations and an authorised decision. The chatbot can explain the published process but cannot determine eligibility on its own.",
+      "requirements": "You may need the unit code, published result, official eligibility notice, and any required application or payment confirmation.",
+      "nextSteps": "Review the official notice, confirm eligibility with the faculty or Examinations Office, complete the required process, and verify the timetable entry.",
+      "contact": "Contact your faculty academic office or the Examinations Office for an authoritative eligibility and scheduling decision."
+    },
+    {
+      "id": "results-transcripts",
+      "title": "Demo Results and Transcript Guide",
+      "keywords": ["exam results", "my results", "transcript", "academic record", "result missing"],
+      "response": "Results and transcripts are private academic records. The live assistant can direct an authenticated student to the correct process, but it will not expose grades in a public chat or alter an academic record.",
+      "requirements": "Use your authenticated student account. For a query, provide the unit code, semester, and the specific record issue without sharing credentials.",
+      "nextSteps": "Check the authorised student portal, confirm the academic period, and submit a formal record query if an approved result is missing or incorrect.",
+      "contact": "Registrar or Academic Records handles official transcripts and record corrections; your faculty can clarify a unit-level result query."
+    },
+    {
+      "id": "deferment",
+      "title": "Demo Semester Deferment Guide",
+      "keywords": ["defer semester", "semester deferment", "defer my studies", "take a break", "study interruption"],
+      "response": "A semester deferment requires the current authorised process and may affect fees, progression, immigration status, or sponsorship. The assistant will explain published steps but cannot approve the request.",
+      "requirements": "Prepare your student details, intended deferment period, reason, and any supporting documents required by the current policy.",
+      "nextSteps": "Speak with your programme office, review the academic and financial implications, submit the authorised request, and wait for written confirmation before assuming it is approved.",
+      "contact": "Start with your faculty or programme office. Registrar, Finance, or International Student support may also need to advise depending on your circumstances."
+    },
+    {
+      "id": "graduation-clearance",
+      "title": "Demo Graduation Clearance Guide",
+      "keywords": ["graduation clearance", "graduate clearance", "graduation requirements", "graduation list", "cleared to graduate"],
+      "response": "Graduation clearance normally combines approved academic, financial, library, and administrative checks. Only the authorised university record can confirm that clearance is complete.",
+      "requirements": "Keep your student number and any outstanding-clearance notices available. Confirm your name and programme details through the authorised process.",
+      "nextSteps": "Review each published clearance item, resolve any hold with the owning office, and verify your official graduation status through the designated channel.",
+      "contact": "Registrar or Graduation support coordinates the process; the office named on a specific hold must resolve that item."
+    },
+    {
+      "id": "library-services",
+      "title": "Demo Library Services Guide",
+      "keywords": ["library", "borrow a book", "library account", "e resources", "database access"],
+      "response": "The library supports borrowing, research assistance, electronic resources, study spaces, and account queries. The live assistant will use the current library service guide and opening-hours notice.",
+      "requirements": "For account help, use your student identification and describe the resource or error. Never share your password in chat.",
+      "nextSteps": "Check the library catalogue or resource portal, note the title or error, and use the official library support channel if access still fails.",
+      "contact": "Library staff handle borrowing, electronic-resource access, research support, and library-account clearance."
+    },
+    {
+      "id": "student-email",
+      "title": "Demo Student Email Support",
+      "keywords": ["student email", "email not working", "forgot email password", "outlook login", "university email"],
+      "response": "Student email issues should be resolved through the approved IT identity process. The chatbot will never request your password, recovery code, or one-time verification code.",
+      "requirements": "Provide your student number and the non-sensitive error message. Do not send passwords, OTPs, or recovery answers.",
+      "nextSteps": "Confirm your internet connection and account name, use the official password-reset route if appropriate, and capture the error text for IT support.",
+      "contact": "The university IT Service Desk handles account activation, password reset, mailbox, and sign-in issues."
+    },
+    {
+      "id": "ams-login",
+      "title": "Demo AMS Login Support",
+      "keywords": ["ams login", "cannot access ams", "ams not working", "student portal login", "portal error"],
+      "response": "AMS access problems can involve identity, account status, browser settings, or a service interruption. The assistant can help classify the issue but will never ask for your password.",
+      "requirements": "Have your student number, the time of the problem, device or browser type, and the exact non-sensitive error message.",
+      "nextSteps": "Try the official AMS address, confirm your account works on the university sign-in page, retry in a supported browser, then report the captured error if it persists.",
+      "contact": "Contact the IT Service Desk for sign-in or technical errors. Contact the owning administrative office if AMS opens but displays an incorrect academic or financial record."
+    },
+    {
+      "id": "counselling",
+      "title": "Demo Counselling and Wellbeing Guide",
+      "keywords": ["counselling", "counseling", "mental health", "wellbeing support", "feeling overwhelmed", "need someone to talk"],
+      "response": "Student wellbeing and counselling services can provide confidential support. If someone may be in immediate danger, contact local emergency services or an available trusted person immediately rather than waiting for a chatbot response.",
+      "requirements": "You do not need to describe private details in the chatbot. Share only what is necessary to request the appropriate support channel.",
+      "nextSteps": "Use the official counselling appointment or urgent-support contact, tell a trusted person if you can, and seek immediate help when safety is at risk.",
+      "contact": "The Student Counselling or Student Services office should provide the current confidential contact and appointment information."
+    },
+    {
+      "id": "accommodation",
+      "title": "Demo Accommodation Guidance",
+      "keywords": ["accommodation", "hostel", "student housing", "place to stay", "residence"],
+      "response": "Accommodation availability, eligibility, pricing, and rules must come from the current official accommodation notice. The assistant will not recommend an unverified landlord or payment destination.",
+      "requirements": "Specify the intended period, student category, and accommodation need. Do not send identity documents until an authorised process requests them securely.",
+      "nextSteps": "Review the approved accommodation options, confirm availability and terms directly, and use only verified payment and application channels.",
+      "contact": "Student Services or the designated accommodation office should confirm approved options and current availability."
+    },
+    {
+      "id": "clubs-activities",
+      "title": "Demo Clubs and Student Activities Guide",
+      "keywords": ["student club", "join a club", "clubs and societies", "student activity", "sports club"],
+      "response": "Student clubs, societies, sports, and activities provide opportunities to connect and develop skills. The live assistant will use an approved current directory rather than listing inactive groups.",
+      "requirements": "Know the type of activity you want, your availability, and any membership or participation requirements shown in the official listing.",
+      "nextSteps": "Browse the current clubs directory, select a group, review its membership details, and contact the listed official representative or Student Affairs channel.",
+      "contact": "Student Affairs or the designated student-life office can confirm active clubs, recognised leaders, and official events."
+    },
+    {
+      "id": "campus-contacts",
+      "title": "Demo Campus Contacts and Hours",
+      "keywords": ["office hours", "campus contact", "phone number", "where is the office", "who do i contact", "campus directory"],
+      "response": "The live assistant will retrieve office locations, contacts, and opening hours from an approved campus directory and show the directory's update date.",
+      "requirements": "State the service you need and, where relevant, your faculty or campus so the correct office can be identified.",
+      "nextSteps": "Identify the office that owns your request, check its current hours and contact channel, then include your student number only through the authorised route when needed.",
+      "contact": "Student Services can route general enquiries. Academic, Finance, Registrar, Library, and IT requests should go directly to the relevant listed office."
+    }
+  ]
+}

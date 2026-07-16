@@ -1,0 +1,105 @@
+{
+  "notice": "Demonstration academic record only — not an official Strathmore University fee statement, timetable, or unit registration record.",
+  "semester": "Demo Semester 1, 2026",
+  "admissions": {
+    "office": "Demo Admissions Office, Student Centre Ground Floor",
+    "email": "admissions-demo@strathmore.example",
+    "phone": "+254 700 000 101",
+    "hours": "Monday–Friday, 08:00–17:00",
+    "steps": [
+      "Choose a programme and review its entry requirements.",
+      "Prepare identification, academic certificates or result slips, and a passport-style photo.",
+      "Complete the online application and retain the application reference number.",
+      "Submit any requested supporting documents and monitor the application status.",
+      "If admitted, follow the offer-letter instructions for acceptance, fees, and registration."
+    ]
+  },
+  "profiles": [
+    {
+      "id": "informatics",
+      "programme": "BSc Informatics",
+      "aliases": ["informatics", "computer science", "it", "software"],
+      "academicContact": { "office": "Demo School of Computing Office, 2nd Floor", "email": "computing-demo@strathmore.example", "phone": "+254 700 000 201", "hours": "Monday–Friday, 08:30–16:30" },
+      "fees": {
+        "currency": "KES",
+        "tuition": 180000,
+        "otherCharges": 12500,
+        "amountPaid": 120000,
+        "balance": 72500,
+        "demoDueDate": "30 September 2026"
+      },
+      "units": [
+        { "code": "INF 2101", "title": "Data Structures and Algorithms", "credits": 3, "type": "Core", "available": true },
+        { "code": "INF 2102", "title": "Database Systems", "credits": 3, "type": "Core", "available": true },
+        { "code": "INF 2103", "title": "Web Application Development", "credits": 3, "type": "Core", "available": true },
+        { "code": "MAT 2101", "title": "Discrete Mathematics", "credits": 3, "type": "Core", "available": true },
+        { "code": "INF 2104", "title": "Human-Computer Interaction", "credits": 3, "type": "Elective", "available": true },
+        { "code": "INF 2105", "title": "Introduction to Artificial Intelligence", "credits": 3, "type": "Elective", "available": true }
+      ],
+      "timetable": [
+        { "day": "Monday", "start": "08:00", "end": "10:00", "code": "INF 2101", "title": "Data Structures and Algorithms", "location": "Demo Room MSB 3" },
+        { "day": "Monday", "start": "14:00", "end": "16:00", "code": "MAT 2101", "title": "Discrete Mathematics", "location": "Demo Room STC 2" },
+        { "day": "Tuesday", "start": "10:00", "end": "12:00", "code": "INF 2102", "title": "Database Systems", "location": "Demo Lab 4" },
+        { "day": "Wednesday", "start": "09:00", "end": "11:00", "code": "INF 2103", "title": "Web Application Development", "location": "Demo Lab 2" },
+        { "day": "Thursday", "start": "11:00", "end": "13:00", "code": "INF 2104", "title": "Human-Computer Interaction", "location": "Demo Room MSB 1" },
+        { "day": "Friday", "start": "08:00", "end": "10:00", "code": "INF 2105", "title": "Introduction to Artificial Intelligence", "location": "Demo Room STC 5" }
+      ]
+    },
+    {
+      "id": "commerce",
+      "programme": "Bachelor of Commerce",
+      "aliases": ["commerce", "business", "accounting", "finance", "bcom"],
+      "academicContact": { "office": "Demo Business School Programme Office, 1st Floor", "email": "business-demo@strathmore.example", "phone": "+254 700 000 202", "hours": "Monday–Friday, 08:30–16:30" },
+      "fees": {
+        "currency": "KES",
+        "tuition": 165000,
+        "otherCharges": 12500,
+        "amountPaid": 100000,
+        "balance": 77500,
+        "demoDueDate": "30 September 2026"
+      },
+      "units": [
+        { "code": "BCM 2101", "title": "Financial Accounting", "credits": 3, "type": "Core", "available": true },
+        { "code": "BCM 2102", "title": "Business Law", "credits": 3, "type": "Core", "available": true },
+        { "code": "BCM 2103", "title": "Marketing Management", "credits": 3, "type": "Core", "available": true },
+        { "code": "BCM 2104", "title": "Business Statistics", "credits": 3, "type": "Core", "available": true },
+        { "code": "BCM 2105", "title": "Entrepreneurship", "credits": 3, "type": "Elective", "available": true }
+      ],
+      "timetable": [
+        { "day": "Monday", "start": "09:00", "end": "11:00", "code": "BCM 2101", "title": "Financial Accounting", "location": "Demo Room SBS 4" },
+        { "day": "Tuesday", "start": "08:00", "end": "10:00", "code": "BCM 2102", "title": "Business Law", "location": "Demo Room SBS 2" },
+        { "day": "Wednesday", "start": "14:00", "end": "16:00", "code": "BCM 2103", "title": "Marketing Management", "location": "Demo Room SBS 5" },
+        { "day": "Thursday", "start": "10:00", "end": "12:00", "code": "BCM 2104", "title": "Business Statistics", "location": "Demo Lab SBS 1" },
+        { "day": "Friday", "start": "11:00", "end": "13:00", "code": "BCM 2105", "title": "Entrepreneurship", "location": "Demo Room SBS 3" }
+      ]
+    },
+    {
+      "id": "law",
+      "programme": "Bachelor of Laws",
+      "aliases": ["law", "llb", "legal"],
+      "academicContact": { "office": "Demo Law School Academic Office, Ground Floor", "email": "law-demo@strathmore.example", "phone": "+254 700 000 203", "hours": "Monday–Friday, 08:30–16:30" },
+      "fees": {
+        "currency": "KES",
+        "tuition": 195000,
+        "otherCharges": 12500,
+        "amountPaid": 150000,
+        "balance": 57500,
+        "demoDueDate": "30 September 2026"
+      },
+      "units": [
+        { "code": "LLB 2101", "title": "Constitutional Law", "credits": 3, "type": "Core", "available": true },
+        { "code": "LLB 2102", "title": "Law of Contract", "credits": 3, "type": "Core", "available": true },
+        { "code": "LLB 2103", "title": "Criminal Law", "credits": 3, "type": "Core", "available": true },
+        { "code": "LLB 2104", "title": "Legal Research and Writing", "credits": 3, "type": "Core", "available": true },
+        { "code": "LLB 2105", "title": "International Law", "credits": 3, "type": "Elective", "available": true }
+      ],
+      "timetable": [
+        { "day": "Monday", "start": "10:00", "end": "12:00", "code": "LLB 2101", "title": "Constitutional Law", "location": "Demo Room SLS 1" },
+        { "day": "Tuesday", "start": "14:00", "end": "16:00", "code": "LLB 2102", "title": "Law of Contract", "location": "Demo Room SLS 3" },
+        { "day": "Wednesday", "start": "08:00", "end": "10:00", "code": "LLB 2103", "title": "Criminal Law", "location": "Demo Room SLS 2" },
+        { "day": "Thursday", "start": "09:00", "end": "11:00", "code": "LLB 2104", "title": "Legal Research and Writing", "location": "Demo Library Lab" },
+        { "day": "Friday", "start": "13:00", "end": "15:00", "code": "LLB 2105", "title": "International Law", "location": "Demo Room SLS 4" }
+      ]
+    }
+  ]
+}

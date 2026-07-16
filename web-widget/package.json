@@ -1,0 +1,14 @@
+{
+  "name": "@strathmore/su-chat-widget",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "preview": "node scripts/preview.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

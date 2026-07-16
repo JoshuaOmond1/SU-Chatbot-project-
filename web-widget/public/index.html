@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#004b36">
+  <title>SU Assistant Preview</title>
+  <link rel="stylesheet" href="./preview.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Strathmore University home">
+      <span class="crest">SU</span>
+      <span><strong>Strathmore University Chatbot</strong><small>Academic and student support</small></span>
+    </a>
+    <div class="account-actions">
+      <span id="account-summary" class="account-summary hidden"></span>
+      <button id="login-button" class="account-button secondary" type="button">Log in</button>
+      <button id="signup-button" class="account-button" type="button">Sign up</button>
+      <button id="sign-out-button" class="account-button secondary hidden" type="button">Sign out</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">STUDENT SUCCESS, SIMPLIFIED</span>
+        <h1>Your university questions,<br><em>answered clearly.</em></h1>
+        <p>SU Assistant helps students find trusted information about courses, fees,
+          academic processes, and support services—all in one conversation.</p>
+        <button class="primary" id="open-chat" type="button">Ask SU Assistant <span>→</span></button>
+        <p class="preview-note">Interactive preview · Uses sample data only</p>
+      </div>
+      <aside class="feature-card" aria-label="Assistant capabilities">
+        <span class="orb">✦</span>
+        <h2>How can I help?</h2>
+        <button class="suggestion" data-question="When is the fee payment deadline?">
+          <span>◷</span><span><strong>Fee deadlines</strong><small>Payment dates and approved channels</small></span>
+        </button>
+        <button class="suggestion" data-question="How do I register for next semester?">
+          <span>✓</span><span><strong>Registration</strong><small>Steps, requirements, and support</small></span>
+        </button>
+        <button class="suggestion" data-question="Where can I get academic advising?">
+          <span>◎</span><span><strong>Academic advising</strong><small>Find the right office and resources</small></span>
+        </button>
+      </aside>
+    </section>
+
+    <section class="trust" aria-label="Assistant qualities">
+      <div><strong>Approved sources</strong><span>Answers grounded in university documents</span></div>
+      <div><strong>Student focused</strong><span>Clear guidance for everyday questions</span></div>
+      <div><strong>Private by design</strong><span>Your credentials stay with SU systems</span></div>
+    </section>
+  </main>
+
+  <su-chat id="student-assistant" api-base-url="https://preview.local" loading
+    label="SU Assistant" welcome-message="Hello! I’m SU Assistant. Ask me about fees, registration, courses, or student support."></su-chat>
+  <dialog id="auth-dialog" class="auth-dialog" aria-labelledby="auth-title">
+    <form id="auth-form" class="auth-card">
+      <button id="auth-close" class="auth-close" type="button" aria-label="Close account window">&times;</button>
+      <span class="eyebrow">PERSONALISED SU ASSISTANT</span>
+      <h2 id="auth-title">Sign in</h2>
+      <p id="auth-subtitle">Sign in to continue your personalised conversation.</p>
+      <div class="auth-tabs" role="tablist" aria-label="Account action">
+        <button id="login-tab" class="auth-tab active" type="button" role="tab" aria-selected="true">Sign in</button>
+        <button id="register-tab" class="auth-tab" type="button" role="tab" aria-selected="false">Create account</button>
+      </div>
+      <div id="registration-fields" class="registration-fields hidden">
+        <label>Full name<input id="full-name" name="fullName" autocomplete="name" maxlength="80"></label>
+        <fieldset class="role-picker">
+          <legend>I am registering as</legend>
+          <label><input type="radio" name="role" value="student" checked><span><strong>Student</strong><small>Academic and student-support guidance</small></span></label>
+          <label><input type="radio" name="role" value="staff"><span><strong>Staff</strong><small>Teaching and administrative guidance</small></span></label>
+        </fieldset>
+        <div id="student-fields" class="role-fields">
+          <label>Programme<input id="programme" name="programme" maxlength="100" placeholder="e.g. BSc Informatics"></label>
+          <label>Year of study<select id="year-of-study" name="yearOfStudy"><option value="">Select year</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option><option>Postgraduate</option></select></label>
+        </div>
+        <div id="staff-fields" class="role-fields hidden">
+          <label>Department<input id="department" name="department" maxlength="100" placeholder="e.g. Student Affairs"></label>
+        </div>
+      </div>
+      <label>University email<input id="auth-email" name="email" type="email" autocomplete="email" required maxlength="254"></label>
+      <label>Password<input id="auth-password" name="password" type="password" autocomplete="current-password" required minlength="6" maxlength="128"></label>
+      <p id="auth-error" class="auth-error hidden" role="alert"></p>
+      <button id="auth-submit" class="primary auth-submit" type="submit">Sign in</button>
+      <p class="auth-note">Demo accounts personalise answers only. Staff access is not privileged until SU identity verification is connected.</p>
+    </form>
+  </dialog>
+  <script src="./runtime-config.js"></script>
+  <script type="module" src="./auth.js?v=3"></script>
+  <script type="module" src="./demo.js?v=13"></script>
+</body>
+</html>

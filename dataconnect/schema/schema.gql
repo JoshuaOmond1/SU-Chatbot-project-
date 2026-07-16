@@ -1,0 +1,41 @@
+type KnowledgeSource @table(name: "knowledge_sources") {
+  id: UUID! @default(expr: "uuidV4()")
+  title: String!
+  canonicalUrl: String
+  domain: String!
+  ownerOffice: String!
+  audience: String! @default(value: "student")
+  approvalStatus: String! @default(value: "draft")
+  version: String
+  isActive: Boolean! @default(value: false)
+  createdAt: Timestamp! @default(expr: "request.time")
+  updatedAt: Timestamp! @default(expr: "request.time")
+}
+
+type KnowledgeChunk @table(name: "knowledge_chunks") {
+  id: UUID! @default(expr: "uuidV4()")
+  source: KnowledgeSource!
+  section: String
+  content: String!
+  contentEmbedding: Vector @col(size: 768)
+  checksum: String!
+  isActive: Boolean! @default(value: false)
+  createdAt: Timestamp! @default(expr: "request.time")
+  updatedAt: Timestamp! @default(expr: "request.time")
+}
+
+type ChatSession @table(name: "chat_sessions") {
+  id: UUID! @default(expr: "uuidV4()")
+  ownerSubject: String!
+  createdAt: Timestamp! @default(expr: "request.time")
+  updatedAt: Timestamp! @default(expr: "request.time")
+}
+
+type ChatMessage @table(name: "chat_messages") {
+  id: UUID! @default(expr: "uuidV4()")
+  session: ChatSession!
+  role: String!
+  content: String!
+  citationsJson: String! @default(value: "[]")
+  createdAt: Timestamp! @default(expr: "request.time")
+}

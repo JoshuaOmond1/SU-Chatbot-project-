@@ -1,0 +1,11 @@
+ENVIRONMENT: production
+USE_DATABASE: "true"
+PUBLIC_BASE_URL: https://pending.invalid
+ALLOWED_ORIGINS: https://su-chatbot-5tr4th.web.app,https://su-chatbot-5tr4th.firebaseapp.com
+CLOUD_SQL_INSTANCE: su-chatbot-5tr4th:me-west1:su-assistant-db
+DATABASE_NAME: su_assistant
+DATABASE_IAM_USER: su-assistant-api@su-chatbot-5tr4th.iam
+VERTEX_PROJECT_ID: su-chatbot-5tr4th
+VERTEX_LOCATION: me-west1
+VERTEX_EMBEDDING_MODEL: text-embedding-005
+EMBEDDING_DIMENSIONS: "768"

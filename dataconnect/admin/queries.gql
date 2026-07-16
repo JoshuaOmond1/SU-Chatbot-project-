@@ -1,0 +1,43 @@
+query ListKnowledgeSources @auth(level: NO_ACCESS) {
+  knowledgeSources(orderBy: [{updatedAt: DESC}]) {
+    id
+    title
+    canonicalUrl
+    domain
+    ownerOffice
+    audience
+    approvalStatus
+    version
+    isActive
+    createdAt
+    updatedAt
+  }
+}
+
+query ListKnowledgeChunks($sourceId: UUID!) @auth(level: NO_ACCESS) {
+  knowledgeChunks(where: {sourceId: {eq: $sourceId}}, orderBy: [{createdAt: ASC}]) {
+    id
+    source { id title }
+    section
+    content
+    checksum
+    isActive
+    createdAt
+    updatedAt
+  }
+}
+
+query SearchApprovedKnowledge($query: String!) @auth(level: NO_ACCESS) {
+  knowledgeChunks_contentEmbedding_similarity(
+    compare_embed: {model: "text-embedding-005", text: $query}
+    method: COSINE
+    where: {isActive: {eq: true}, source: {isActive: {eq: true}, approvalStatus: {eq: "approved"}}}
+    limit: 6
+  ) {
+    id
+    section
+    content
+    source { id title canonicalUrl ownerOffice }
+    _metadata { distance }
+  }
+}

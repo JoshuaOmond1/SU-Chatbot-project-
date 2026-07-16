@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_DB: su_assistant
+      POSTGRES_USER: su_assistant
+      POSTGRES_PASSWORD: local-development-only
+    ports: ["5432:5432"]
+    volumes:
+      - su_postgres:/var/lib/postgresql/data
+      - ./backend/migrations:/docker-entrypoint-initdb.d:ro
+  api:
+    build: ./backend
+    env_file: ./backend/.env
+    environment:
+      DATABASE_URL: postgresql://su_assistant:local-development-only@postgres:5432/su_assistant
+      USE_DATABASE: "true"
+    ports: ["8000:8000"]
+    depends_on: [postgres]
+volumes:
+  su_postgres:

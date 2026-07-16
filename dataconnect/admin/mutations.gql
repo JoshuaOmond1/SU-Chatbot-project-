@@ -1,0 +1,54 @@
+mutation CreateKnowledgeSource(
+  $title: String!
+  $canonicalUrl: String
+  $domain: String!
+  $ownerOffice: String!
+  $audience: String!
+  $version: String
+) @auth(level: NO_ACCESS) {
+  knowledgeSource_insert(data: {
+    title: $title
+    canonicalUrl: $canonicalUrl
+    domain: $domain
+    ownerOffice: $ownerOffice
+    audience: $audience
+    version: $version
+    approvalStatus: "draft"
+    isActive: false
+  })
+}
+
+mutation AddKnowledgeChunk(
+  $sourceId: UUID!
+  $section: String
+  $content: String!
+  $checksum: String!
+) @auth(level: NO_ACCESS) {
+  knowledgeChunk_insert(data: {
+    sourceId: $sourceId
+    section: $section
+    content: $content
+    contentEmbedding_embed: {model: "text-embedding-005", text: $content}
+    checksum: $checksum
+    isActive: false
+  })
+}
+
+mutation ReviewKnowledgeSource(
+  $id: UUID!
+  $approvalStatus: String!
+  $isActive: Boolean!
+) @auth(level: NO_ACCESS) {
+  knowledgeSource_update(id: $id, data: {
+    approvalStatus: $approvalStatus
+    isActive: $isActive
+    updatedAt_expr: "request.time"
+  })
+}
+
+mutation SetChunkActive($id: UUID!, $isActive: Boolean!) @auth(level: NO_ACCESS) {
+  knowledgeChunk_update(id: $id, data: {
+    isActive: $isActive
+    updatedAt_expr: "request.time"
+  })
+}

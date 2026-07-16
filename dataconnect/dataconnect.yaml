@@ -1,0 +1,13 @@
+specVersion: "v1"
+serviceId: su-assistant
+location: me-west1
+schema:
+  source: ./schema
+  datasource:
+    postgresql:
+      database: su_assistant
+      cloudSql:
+        instanceId: su-assistant-db
+        schemaValidation: STRICT
+connectorDirs:
+  - ./admin
