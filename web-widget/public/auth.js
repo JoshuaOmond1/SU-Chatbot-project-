@@ -1,6 +1,6 @@
 const firebaseConfig = Object.freeze({
-  apiKey: "AIzaSyC0oq5Dm2m7_t5wB7zKlQRXNWAqe0TzcOA",
-  projectId: "su-chatbot-5tr4th",
+  apiKey: "###################",
+  projectId: "su-bot-5tr4th",
 });
 
 const sessionKey = "su-assistant:firebase-session:v1";
